@@ -1,0 +1,3 @@
+users = {'Tom', 'Tim', 'Anna'}
+students = users.copy()
+print(students)

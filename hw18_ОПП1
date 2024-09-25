@@ -1,0 +1,22 @@
+class Autobus(object):
+    name = "Reno"
+    speed = 120
+    mileage = 54
+    capacity = 50
+
+    def __init__(self, n, s, m, c):
+        self.name = n
+        self.speed = s
+        self.mileage = m
+        self.capacity = c 
+
+    def info(self):
+        print(f'{self.name}, Скорость: {self.speed}, Пробег: {self.mileage}')
+
+    def seating_capacity(self.capacity):
+        return f"Максимальная вместительность автобуса {self.name}, {self.capacity} пассажиров"
+
+h1 = Autobus("Reno", 120, 54, 50)
+h2 = Autobus("Lada", 100, 20, 20)
+
+h1.seating_capacity()
