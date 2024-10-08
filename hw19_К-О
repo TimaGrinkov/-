@@ -1,0 +1,23 @@
+class Cassa(object):
+    name = "Cassa_1"
+    cash = 5000
+
+    def pop_up(self, x):
+        self.x = x
+        x += self.cash
+        return f'В кассе: {x}'
+
+    def count_1000(self):
+        return self.cash // 1000
+
+    def take_away(self, y):
+        self.y = y
+        if y <= self.cash:
+            self.cash -= y
+            print(self.cash)
+        else:
+            return f'В кассе недостаточно средств.'
+
+h1 = Cassa()
+
+print(h1.take_away(7000))

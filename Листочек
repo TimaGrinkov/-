@@ -1,23 +1,2 @@
-class Human(object):
-    name = "Tima"
-    height = 85
-    age = 27
-
-    def __init__(self, n , h, a):
-        self.name = n
-        self.height = h
-        self.age = a
-
-    def privet(self):
-        print('Привет, меня зовут {self.name}, мне {self.age} лет!')
-
-    def get_older(self):
-        self.age -= 5
-
-    
-h1 = Human("Tima", 175, 27)
-h2 = Human("Andrey", 180, 28)
-
-
-h2.get_older()
-print(h2.age)
+for i in range(10 +1):
+    print (i)
